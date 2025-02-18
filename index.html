@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customizable Resume Builder</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white p-4 fixed w-full top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#home" class="text-2xl">Resume Builder</a>
+            <div class="space-x-4">
+                <a href="#section1" class="hover:text-blue-300">Section 1</a>
+                <a href="#section2" class="hover:text-blue-300">Section 2</a>
+                <a href="#download" class="hover:text-blue-300">Download PDF</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section 1 -->
+    <section id="section1" class="py-32 bg-white text-gray-700">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">Personal Information</h2>
+            <p class="mt-4 text-lg">Fill in your personal information to create a resume.</p>
+            <form class="mt-8 space-y-6">
+                <input type="text" placeholder="Full Name" class="block w-1/2 mx-auto p-3 border rounded" id="name" />
+                <input type="email" placeholder="Email" class="block w-1/2 mx-auto p-3 border rounded" id="email" />
+                <input type="text" placeholder="Phone" class="block w-1/2 mx-auto p-3 border rounded" id="phone" />
+                <textarea placeholder="Summary" class="block w-1/2 mx-auto p-3 border rounded" id="summary"></textarea>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="section2" class="py-32 bg-gray-100 text-gray-700">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">Skills & Experience</h2>
+            <p class="mt-4 text-lg">Enter your skills and work experience details.</p>
+            <form class="mt-8 space-y-6">
+                <input type="text" placeholder="Skill 1" class="block w-1/2 mx-auto p-3 border rounded" id="skill1" />
+                <input type="text" placeholder="Skill 2" class="block w-1/2 mx-auto p-3 border rounded" id="skill2" />
+                <textarea placeholder="Work Experience" class="block w-1/2 mx-auto p-3 border rounded" id="experience"></textarea>
+            </form>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-32 bg-blue-600 text-white text-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold">Download Your Resume</h2>
+            <button id="downloadBtn" class="mt-8 px-6 py-3 bg-green-500 text-white rounded">
+                Download PDF
+            </button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
